@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>s1mple</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <div class="container header-wrap">
+                <!--Лого-->
+                <div class="logo">
+                    <img src="media/s1mple.png" alt="s1mple logo" height="39" width="57">
+                </div>
+                <!--Текстовое меню-->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Bio</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Trophy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="parallax">
+                <div class="parallax-content">
+                    <h1>s1mple</h1>
+                    <p>Oleksandr "s1mple" Kostyljev (born October 2, 1997) is a Ukrainian professional Counter-Strike: Global Offensive player who plays for Natus Vincere as the AWPer. 
+                        Widely considered as one of the greatest and most accomplished CS:GO players of all time, he has won a record 21 HLTV MVP medals, 
+                        a Major and an Intel Grand Slam trophy, among other numerous S-Tier trophies, and has been crowned as the best player of 2018, 2021, and 2022, 
+                        and a runner-up for the best player of 2019 and 2020.
+                    </p>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <h1>s1mple</h1>
+                    <p>Oleksandr "s1mple" Kostyljev (born October 2, 1997) is a Ukrainian professional Counter-Strike: Global Offensive player who plays for Natus Vincere as the AWPer. 
+                        Widely considered as one of the greatest and most accomplished CS:GO players of all time, he has won a record 21 HLTV MVP medals, 
+                        a Major and an Intel Grand Slam trophy, among other numerous S-Tier trophies, and has been crowned as the best player of 2018, 2021, and 2022, 
+                        and a runner-up for the best player of 2019 and 2020.
+                    </p>
+            </div>
+        </main>
+
+        <!--Анимация хедера-->
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                let scrollPos = 200;
+                let header = document.getElementById('header');
+
+                if(document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
+            }
+        </script>
+    </body>
+</html>

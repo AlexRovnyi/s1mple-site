@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    height: 970px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1770px;
+    margin: 0 auto;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 80 80px;
+    transition: all .7s;
+}
+
+.header.active {
+    background: #000000;
+    padding: 4px 0px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, li {
+    display: flex;
+}
+
+.header a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 20px 15px 20px;
+}
+
+.menu {
+    margin: 2px 40px 0px 0px;
+}
+
+.logo {
+    margin: 13px 0px 0px 55px;
+}
+
+.parallax {
+    background: url(media/s1mple1.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 970px;
+    display: flex;
+
+    /*Текст*/
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    position: relative;
+}
+
+.parallax-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px 300px 0px 300px;
+}
+
+.parallax-content p {
+    font-size: 24px;
+    margin: 10px 300px 0px 300px;
+}
+
+.page-content {
+    background-color: #ffffff;
+    height: 900px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 100px 300px 0px 300px;
+}
+
+p {
+    font-size: 24px;
+    margin: 0px 300px 0px 300px;
+}
