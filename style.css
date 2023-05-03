@@ -44,8 +44,9 @@ body {
     justify-content: space-between;
 }
 
-ul, li {
-    display: flex;
+header li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
 .header a {
@@ -54,7 +55,7 @@ ul, li {
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
-    padding: 20px 15px 20px;
+    padding: 20px 1px 20px;
 }
 
 .menu {
@@ -66,13 +67,14 @@ ul, li {
 }
 
 .parallax {
-    background: url(media/s1mple1.jpg);
+    background: url(media/s1mple.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     height: 970px;
     display: flex;
+    padding: 0 350px;
 
     /*Текст*/
     justify-content: center;
@@ -84,26 +86,107 @@ ul, li {
 .parallax-content h1 {
     font-size: 48px;
     font-weight: 700;
-    margin: 0px 300px 0px 300px;
 }
 
 .parallax-content p {
     font-size: 24px;
-    margin: 10px 300px 0px 300px;
+    margin: 10px 0;
 }
 
 .page-content {
     background-color: #ffffff;
-    height: 900px;
+    padding: 200px 350px;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 700;
-    margin: 100px 300px 0px 300px;
 }
 
 p {
     font-size: 24px;
-    margin: 0px 300px 0px 300px;
+    margin: 10px 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+  
+.menu li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 15px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom right;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+  
+.menu li:hover {
+    color: #cdcdcd;
+}
+  
+.menu li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    opacity: 1;
+}
+
+.logo a {
+    padding: 0;
+}
+
+.career {
+    position: relative;
+    padding: 80px 351px;
+    background-color: #ffffff;
+}
+
+.career__aside {
+    margin-top: 50px;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    z-index: 2;
+    width: 84px;
+}
+
+.career__aside-years {
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 84px;    
+}
+
+.career__aside-year {
+    min-width: 82px;
+    padding: 6px 0;
+    overflow: hidden;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.career__aside-year:not(:last-child) {
+    margin-bottom: 16px
+}
+
+.career__item {
+    position: relative;
+    top: -628px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    padding-top: 85px;
+    padding-left: 115px;
 }
