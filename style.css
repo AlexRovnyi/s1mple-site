@@ -181,6 +181,12 @@ p {
     margin-bottom: 16px
 }
 
+.career__aside-year:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
 .career__item {
     position: relative;
     top: -628px;
