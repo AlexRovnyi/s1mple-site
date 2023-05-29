@@ -239,7 +239,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, #022046, #00367c);
+    background: linear-gradient(135deg, #022046, #0051ff);
 }
    
 .card:hover {
