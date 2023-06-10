@@ -333,6 +333,11 @@ p {
     transition: 0.5s;
     top: 25%;
 }
+
+.ind {
+    position: relative;
+    top: 130px;
+}
    
 /*Текст*/
 .text-title {
